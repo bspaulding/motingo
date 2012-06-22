@@ -1,0 +1,16 @@
+<h1>Editing link_preview</h1>
+
+<% form_for(@link_preview) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @link_preview %> |
+<%= link_to 'Back', link_previews_path %>

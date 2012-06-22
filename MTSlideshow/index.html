@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>MTSlideshow Demo</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/mtslideshow.css">
+<script type="text/javascript" src="javascripts/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="javascripts/MTSlideshow.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	// MTSlideshow
+	image_urls = [
+		'images/1.jpg',
+		'images/2.jpg',
+		'images/3.jpg',
+		'images/4.jpg',
+		'images/5.jpg'
+	]
+
+	slideshow = new MTSlideshow( 'photo_slideshow', image_urls, 3000 );	
+	slideshow.start();
+});
+</script>
+</head>
+
+<body>
+<h1>MTSlideshow</h1>
+<div id="MTSlideshowOuterContainer">
+    <div id="slideshow_outer_container">
+    	<div id="photo_slideshow" style="width: 565px; height: 256px;"></div>
+    	<div id="gordon_logo_overlay">
+    		<img src="images/gordon_logo.png">
+    	</div>
+    </div>
+    <div id="slideshow_description">
+    	<p>Gordon College, in Wenham, Massachusetts, is among the top Christian colleges in the nation and the only multidenominational Christian college in New England.</p>
+    </div>
+</div>
+<p>
+    MTSlideshow is a simple javascript slideshow. It was built as an alternative for Gordon College's Flash-based home page slider. It has been implemented at <a href="http://www.usai.net/">USAi.net</a>.
+</p>
+<p>
+    Because it is Javascript based, and does not require flash, MTSlideshow can be used to provide slider functionality that is <a href="MTSlideshow_in_iPhone_Simulator.mov">compatible with Mobile WebKit Browsers</a>.
+</p>
+</body>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+  <style>
+    html, body { margin: 0px; padding: 0px; }
+    body {
+      background-image: url('images/texture-bg.png');
+      -webkit-box-shadow: 0px 0px 20px black inset;
+      -moz-box-shadow: 0px 0px 20px black inset;
+      box-shadow: 0px 0px 20px black inset;
+    }
+    img {
+      display: block;
+      margin: 0px auto;
+    }
+
+body, html {height: 100%;}
+#outer {height: 100%; overflow: visible;} /* or without overflow */
+#outer {height: 400px; overflow: hidden; position: relative;}
+#outer[id] {display: table; position: static;}
+
+#middle {position: absolute; top: 50%; height: 200px; } /* for explorer only*/
+#middle[id] {display: table-cell; vertical-align: middle; width: 100%;}
+
+#inner {position: relative; top: -50%} /* for explorer only */
+/* optional: #inner[id] {position: static;} */
+  </style>
+</head>
+<body>
+  <div id="outer">
+    <div id="middle">
+      <div id="inner">
+        <a href="http://click.linksynergy.com/fs-bin/stat?id=tELgKTyj2NA&offerid=146261&type=3&subid=0&tmpid=1826&RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Frhyming-dictionary%252Fid533477780%253Fmt%253D8%2526uo%253D4%2526partnerId%253D30">
+          <img src="images/apple-touch-icon.png"/>
+        </a>
+
+        <!-- Large Available in the App Store Button -->
+        <!--<a href="http://click.linksynergy.com/fs-bin/stat?id=tELgKTyj2NA&offerid=146261&type=3&subid=0&tmpid=1826&RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Frhyming-dictionary%252Fid533477780%253Fmt%253D8%2526uo%253D4%2526partnerId%253D30" target="itunes_store"><img src="http://r.mzstatic.com/images/web/linkmaker/badge_appstore-lrg.gif" alt="Rhyming Dictionary - Motingo" style="border: 0;"/></a>-->
+
+        <!-- Direct link to Reviews Page in iTunes -->
+        <!--<a href="http://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=533477780">
+          Rate It!
+        </a>-->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

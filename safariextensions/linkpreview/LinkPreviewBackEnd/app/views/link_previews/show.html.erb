@@ -1,0 +1,13 @@
+<p>
+  <b>Url:</b>
+  <%=h @link_preview.url %>
+</p>
+
+<p>
+  <b>Image file:</b><br/>
+  <%=h image_tag(@link_preview.image_file) || "" %>
+</p>
+
+
+<%= link_to 'Edit', edit_link_preview_path(@link_preview) %> |
+<%= link_to 'Back', link_previews_path %>
