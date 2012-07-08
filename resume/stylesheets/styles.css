@@ -1,0 +1,71 @@
+body {
+  width: 80%; margin: 36px auto;
+  font-family: "adriane", serif;
+  font-size: 14px;
+  line-height: 18px;
+  background: #FDFDFD;
+  color: #333;
+}
+
+strong { font-weight: bold; }
+
+h1 {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h1>small {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+h2,
+section>h1 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+header {
+  border-bottom: 1px solid #333;
+  padding: 0px 0px 18px 0px;
+  margin-bottom: 18px;
+  height: 54px;
+}
+
+header>h1 { float: left; line-height: 54px; font-size: 42px; }
+header>table {
+  float: right;
+  font-size: 14px;
+  line-height: 18px;
+}
+header>table th {
+  text-align: right; padding-right: 18px;
+  font-weight: bold;
+}
+
+ul.comma-separated { list-style-type: none; }
+ul.comma-separated>li { display: inline; font-size: 14px; line-height: 18px; }
+ul.comma-separated>li:after { content: ", "; }
+ul.comma-separated>li:last-child:after { content: "."; }
+
+section { margin-bottom: 18px; }
+section>article { float: left; width: 100%; margin: 18px 0px; }
+section>article>h1 { font-size: 22px; float: left; }
+section>article>h2.dates { font-size: 14px; float: right; }
+section>article>p,
+section>article>ul { float: left; }
+section>article>ul { list-style-type: disc; list-style-position: inside; margin-left: 9px; }
+
+@media print {
+  body { width: 90%; font-size: 12px; }
+  h1 { font-size: 24px; }
+  header>h1 { font-size: 32px; }
+  header>table { font-size: 12px; }
+  header>table th { padding-right: 9px; }
+  h2, section>h1 { font-size: 18px; line-height: 36px; }
+  h2>small, section>h1>small { font-size: 12px; }
+  ul.comma-separated>li { font-size: 12px; }
+  section>article>h1 { font-size: 16px; }
+  section>article>h1>small { font-size: 14px; }
+  section>article>h2.dates { font-size: 10px; }
+}
