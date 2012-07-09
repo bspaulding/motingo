@@ -61,17 +61,13 @@ section>article>p,
 section>article>ul { float: left; clear: left; }
 section>article>ul { list-style-type: disc; list-style-position: inside; margin-left: 9px; }
 
-@media screen and (max-device-width: 768px) {
-  header>h1 { font-size: 38px; }
-}
-
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 804px) {
   header { height: 108px; }
   header>h1 { font-size: 32px; width: 100%; text-align: center; }
   header>h2 { width: 100%; font-size: 14px; text-align: center; }
 }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   header>h1 { font-size: 24px; }
 }
 
