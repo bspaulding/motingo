@@ -52,12 +52,13 @@ ul.comma-separated>li { display: inline; font-size: 14px; line-height: 18px; }
 ul.comma-separated>li:after { content: ", "; }
 ul.comma-separated>li:last-child:after { content: "."; }
 
-section { margin-bottom: 18px; }
-section>article { float: left; width: 100%; margin: 18px 0px; }
+section { margin-bottom: 18px; float: left; width: 100%; }
+section>article { float: left; width: 100%; margin: 9px 0px; }
+section>article:first-child { margin-top: 0px; }
 section>article>h1 { font-size: 22px; float: left; }
 section>article>h2.dates { font-size: 14px; float: right; }
 section>article>p,
-section>article>ul { float: left; }
+section>article>ul { float: left; clear: left; }
 section>article>ul { list-style-type: disc; list-style-position: inside; margin-left: 9px; }
 
 @media screen and (max-device-width: 768px) {
