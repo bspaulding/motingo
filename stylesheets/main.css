@@ -17,9 +17,8 @@ body {
 	-webkit-background-size: 10px 800px;
 }
 
-a:link, a:visited {
-  color: #000;
-}
+a:link, a:visited { color: #000; text-decoration: none; }
+a:hover, a:active { text-decoration: underline; }
 
 h1 {
   text-align: center;
