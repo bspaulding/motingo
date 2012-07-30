@@ -26,7 +26,7 @@ h1 {
 }
 
 .web_design_portfolio_item_thumb {
-  width: 30%;
+  width: 50%;
   min-width: 240px;
 
   float: left;
@@ -112,10 +112,6 @@ footer {
 }
 
 /* Breakpoints - Scaling down, unfortunately. Since this is retroactive to the original design, and a faster fix */
-
-@media all and (max-width:1024px) {
-  .web_design_portfolio_item_thumb { width: 50%; }
-}
 
 @media all and (max-width:720px) {
   .web_design_portfolio_item_thumb { width: 100%; }
