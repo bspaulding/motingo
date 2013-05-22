@@ -1,0 +1,2 @@
+ExpiresActive on
+ExpiresByType image/gif "modification plus 10 years"
