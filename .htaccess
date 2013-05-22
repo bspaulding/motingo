@@ -1,2 +1,6 @@
-ExpiresActive on
-ExpiresByType image/gif "modification plus 10 years"
+<ifModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/png "modification plus 10 years"
+  ExpiresByType text/css "now plus 1 months"
+  ExpiresDefault "access plus 1 days"
+</ifModule>
