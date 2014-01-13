@@ -58,7 +58,7 @@ section>article:first-child { margin-top: 0px; }
 section>article>h1 { font-size: 22px; float: left; }
 section>article>h2.dates { font-size: 14px; float: right; }
 section>article>p,
-section>article>ul { float: left; clear: left; }
+section>article>ul { width: 100%; float: left; clear: left; }
 section>article>ul { list-style-type: disc; list-style-position: inside; margin-left: 9px; }
 
 @media screen and (max-width: 804px) {
