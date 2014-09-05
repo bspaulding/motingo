@@ -53,7 +53,7 @@ ul.comma-separated>li:after { content: ", "; }
 ul.comma-separated>li:last-child:after { content: "."; }
 
 section { margin-bottom: 18px; float: left; width: 100%; }
-section>article { float: left; width: 100%; margin: 9px 0px; }
+section>article { float: left; width: 100%; margin: 0px 0px 9px; }
 section>article:first-child { margin-top: 0px; }
 section>article>h1 { font-size: 22px; float: left; }
 section>article>h2.dates { font-size: 14px; float: right; }
