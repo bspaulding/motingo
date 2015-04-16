@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0"/>
 		<title>Autometry: Fuel Tracker for iPhone</title>
 		<script type="text/javascript">
 			// TypeKit
@@ -50,40 +51,88 @@
 			}
 
 			.h-split {
-				float: left;
 				width: 50%;
 			}
 
+			.video {
+				float: left;
+			}
+
 			.description {
+				float: right;
 				padding-top: 140px;
+			}
+			.description-inner {
 				max-width: 480px;
+			}
+
+			.icon {
+				border-radius: 14px;
+			}
+
+			@media (max-width: 1000px) {
+				.h-split {
+					float: none;
+					width: 100%;
+				}
+				.description-inner,
+				.h-split.description {
+					margin: 0px auto;
+				}
+				.description {
+					padding-top: 20px;
+				}
+				ul { text-align: left; }
+				.preview-container {
+					float: none;
+					margin: 0px auto;
+				}
+				.preview-container>video {
+					padding-left: 0px;
+				}
+				body {
+					text-align: center;
+				}
+			}
+			@media (max-width: 320px) {
+				.preview-container {
+					width: 100%;
+				}
+
+				.preview-container>video {
+					padding-top: 105px;
+					width: 225px;
+				}
 			}
 		</style>
 	</head>
 	<body>
-		<div class="h-split">
+		<div class="h-split description">
+			<div class="description-inner">
+				<img class="icon" src="images/Icon@2x.png"/>
+				<h1>Autometry</h1>
+				<p>Autometry helps you track your fuel data every time you fill up!</p>
+				<ul>
+					<li>Use your location to enter info faster and more accurately.
+					<li>See metrics like <em>Miles Per Gallon</em> and <em>Cost Per Mile</em> to keep tabs on how efficient you're driving.
+					<li>Easily export your data by emailing a spreadsheet of all your refuels.
+				</ul>
+				<p style="padding-top: 10px;">
+					Autometry is available on iPhones running iOS 8.
+				</p>
+				<p style="padding-top: 10px;">
+					<a href="#"><img src="images/app-store-badge-us.svg"/></a>
+				</p>
+				<p style="padding-top: 10px;">
+					Are you having trouble with the app?</br>
+					Please <a href="mailto:bradley.spaulding@motingo.com?subject=Autometry Support">send an email</a>, and we'll get back to you ASAP.
+				</p>
+			</div>
+		</div>
+		<div class="h-split video">
 			<div class="preview-container">
 				<video src="app-preview.mp4" poster="images/autometry-app-preview-web-poster.png"></video>
 			</div>
-		</div>
-		<div class="h-split description">
-			<h1>Autometry</h1>
-			<p>Autometry helps you track your fuel data every time you fill up!</p>
-			<ul>
-				<li>Use your location to enter info faster and more accurately.
-				<li>See metrics like <em>Miles Per Gallon</em> and <em>Cost Per Mile</em> to keep tabs on how efficient you're driving.
-				<li>Easily export your data by emailing a spreadsheet of all your refuels.
-			</ul>
-			<p style="padding-top: 10px;">
-				Autometry is available on iPhones running iOS 8.
-			</p>
-			<p style="padding-top: 10px;">
-				<a href="#"><img src="images/app-store-badge-us.svg"/></a>
-			</p>
-			<p style="padding-top: 10px;">
-				Are you having trouble with the app?</br>
-				Please <a href="mailto:bradley.spaulding@motingo.com?subject=Autometry Support">send an email</a>, and we'll get back to you ASAP.
-			</p>
 		</div>
 		<script>
 			var video = document.getElementsByTagName("video")[0];
