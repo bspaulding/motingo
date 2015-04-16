@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Autometry: Fuel Tracker for iPhone</title>
+		<script type="text/javascript">
+			// TypeKit
+			(function() {
+				var config = {
+					kitId: 'wcj3auy',
+					scriptTimeout: 3000
+				};
+				var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+			})();
+
+			// Google Analytics
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-16483275-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<style>
+			body {
+				font-size: 1em;
+				font-family: "futura-pt",sans-serif;
+				line-height: 160%;
+
+				background-color:  #EEE;
+				background-image:  -webkit-gradient(linear, left top, right bottom, from(white), color-stop(0.3, white), to(#EEE));
+				background-repeat: repeat-x;
+				-webkit-background-size: 10px 800px;
+			}
+
+			.preview-container {
+				background-image: url(images/iphone6-spacegray.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				float: right;
+				height: 1000px;
+				width: 500px;
+			}
+
+			.preview-container>video {
+				cursor: pointer;
+				padding: 172px 0px 0px 65px;
+				width: 368px;
+			}
+
+			.h-split {
+				float: left;
+				width: 50%;
+			}
+
+			.description {
+				padding-top: 140px;
+				max-width: 480px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="h-split">
+			<div class="preview-container">
+				<video src="app-preview.mp4" poster="images/autometry-app-preview-web-poster.png"></video>
+			</div>
+		</div>
+		<div class="h-split description">
+			<h1>Autometry</h1>
+			<p>Autometry helps you track your fuel data every time you fill up!</p>
+			<ul>
+				<li>Use your location to enter info faster and more accurately.
+				<li>See metrics like <em>Miles Per Gallon</em> and <em>Cost Per Mile</em> to keep tabs on how efficient you're driving.
+				<li>Easily export your data by emailing a spreadsheet of all your refuels.
+			</ul>
+			<p style="padding-top: 10px;">
+				Autometry is available on iPhones running iOS 8.
+			</p>
+			<p style="padding-top: 10px;">
+				<a href="#"><img src="images/app-store-badge-us.svg"/></a>
+			</p>
+			<p style="padding-top: 10px;">
+				Are you having trouble with the app?</br>
+				Please <a href="mailto:bradley.spaulding@motingo.com?subject=Autometry Support">send an email</a>, and we'll get back to you ASAP.
+			</p>
+		</div>
+		<script>
+			var video = document.getElementsByTagName("video")[0];
+			video.volume = 0;
+			video.addEventListener("click", function() {
+				video[video.paused ? "play" : "pause"]();
+			});
+		</script>
+	</body>
+</html>
