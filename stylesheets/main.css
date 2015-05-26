@@ -56,37 +56,6 @@ h1 {
   font-weight: lighter;
 }
 
-.web_design_portfolio_item_thumb h1 a:link,
-.web_design_portfolio_item_thumb h1 a:visited {
-  text-decoration: none;
-}
-
-.web_design_portfolio_item_thumb p {
-  display: none;
-}
-
-.web_design_portfolio_item {
-  text-align: center;
-}
-
-.web_design_portfolio_item img { width: 100%; }
-
-.web_design_portfolio_item h1 {
-  margin: 0px;
-  padding: 0px;
-
-  font-size: 1.0em;
-}
-
-.web_design_portfolio_item p {
-  margin: 0px auto;
-  padding: 0px;
-  width: 100%;
-
-  text-align: left;
-  font-size: 0.9em;
-}
-
 footer {
   margin: 2em auto;
 	padding: 0px;
