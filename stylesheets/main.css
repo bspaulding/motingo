@@ -14,7 +14,7 @@ body {
 	background-color:  #EEE;
 	background-image:  -webkit-gradient(linear, left top, right bottom, from(white), color-stop(0.3, white), to(#EEE));
 	background-repeat: repeat-x;
-	-webkit-background-size: 10px 800px;
+	background-size: 10px 800px;
 }
 
 a:link, a:visited { color: #000; text-decoration: none; }
